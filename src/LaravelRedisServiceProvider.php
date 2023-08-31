@@ -19,7 +19,7 @@ class LaravelRedisServiceProvider extends PackageServiceProvider
     {
         $package
             ->name($this->name)
-            ->hasConfigFile($this->name)
+            ->hasConfigFile()
             ->hasCommand(LaravelRedisMakeCommand::class)
             ->hasCommand(RefreshSearchByCommand::class);
 
